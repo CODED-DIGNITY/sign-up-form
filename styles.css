@@ -21,7 +21,7 @@ body {
 
 .container {
 	display: flex;
-	height: 100dvh;
+	height: 100vh;
 }
 
 .hero-image {
@@ -137,4 +137,14 @@ button:active {
 .tagline {
 	font-size: 1.3rem;
 	margin-bottom: 40px;
+}
+.flareon {
+	display: absolute;
+	margin-left: 80%;
+	margin-top: auto;
+	height: 120px;
+	width: 120px;
+}
+#flareon {
+	width: 100%;
 }
