@@ -12,60 +12,61 @@
 			<div class="hero-image">
 				<img src="assets/pikachu.gif" alt="Pikachu" />
 			</div>
+			<div class="right">
+				<div class="form">
+					<img src="assets/Pokémon_logo.svg" alt="Logo" id="logo" />
+					<h1>Welcome, Future Trainer</h1>
+					<p class="tagline">Start your journey with a spark</p>
 
-			<div class="form">
-				<img src="assets/Pokémon_logo.svg" alt="Logo" id="logo" />
-				<h1>Welcome, Future Trainer</h1>
-				<p class="tagline">Start your journey with a spark</p>
+					<form action="index.html" method="post">
+						<fieldset>
+							<div class="row">
+								<p>
+									<label for="name">Full Name</label><br />
+									<input type="text" id="name" name="name" required />
+								</p>
 
-				<form action="index.html" method="post">
-					<fieldset>
-						<div class="row">
-							<p>
-								<label for="name">Full Name</label><br />
-								<input type="text" id="name" name="name" required />
+								<p>
+									<label for="mail">Email</label><br />
+									<input type="email" id="mail" name="mail" required />
+								</p>
+							</div>
+
+							<div class="row">
+								<p>
+									<label for="password">Password</label><br />
+									<input
+										type="password"
+										id="password"
+										minlength="8"
+										name="password"
+										required
+									/>
+								</p>
+
+								<p>
+									<label for="repeat-password">Confirm Password</label><br />
+									<input
+										type="password"
+										id="repeat-password"
+										minlength="8"
+										required
+										name="confirm-password"
+									/>
+								</p>
+							</div>
+
+							<button type="submit">Get Started</button>
+
+							<p class="footer-text">
+								Already have an account?
+								<a href="">Log in</a>
 							</p>
-
-							<p>
-								<label for="mail">Email</label><br />
-								<input type="email" id="mail" name="mail" required />
-							</p>
-						</div>
-
-						<div class="row">
-							<p>
-								<label for="password">Password</label><br />
-								<input
-									type="password"
-									id="password"
-									minlength="8"
-									name="password"
-									required
-								/>
-							</p>
-
-							<p>
-								<label for="repeat-password">Confirm Password</label><br />
-								<input
-									type="password"
-									id="repeat-password"
-									minlength="8"
-									required
-									name="confirm-password"
-								/>
-							</p>
-						</div>
-
-						<button type="submit">Get Started</button>
-
-						<p class="footer-text">
-							Already have an account?
-							<a href="">Log in</a>
-						</p>
-					</fieldset>
-				</form>
-				<div class="flareon">
-					<img src="assets/flareon.gif" alt="Flareon" id="flareon" />
+						</fieldset>
+					</form>
+					<div class="flareon">
+						<img src="assets/flareon.gif" alt="Flareon" id="flareon" />
+					</div>
 				</div>
 			</div>
 		</div>

@@ -37,23 +37,41 @@ body {
 	width: 100%;
 }
 
-#logo {
-	align-self: center;
-	width: clamp(350px, 50%, 500px);
-	margin-bottom: 50px;
-}
-h1 {
-	font-family: "Orbitron", sans-serif;
+.right {
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--black);
 }
 
 .form {
-	width: 60%;
+	width: 500px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding: 60px 80px;
 	background-color: var(--white);
 	text-align: center;
+	border: 1px solid #eee;
+	border-radius: 15px;
+	box-shadow: #ffffff15 0px 5px 20px 10px;
+}
+
+#logo {
+	align-self: center;
+	width: clamp(350px, 50%, 500px);
+	margin-bottom: 50px;
+	filter: drop-shadow(0 4px 10px rgba(50, 50, 50, 0.15));
+}
+
+h1 {
+	font-family: "Orbitron", sans-serif;
+	font-size: 1.8rem;
+}
+
+.tagline {
+	font-size: 1.2rem;
 }
 
 .form > * {
@@ -68,7 +86,9 @@ fieldset {
 	width: 100%;
 	max-width: 420px;
 	margin: 0 auto;
+	margin-top: 30px;
 	text-align: left;
+	font-size: 1rem;
 }
 
 .row {
@@ -87,24 +107,24 @@ input {
 	width: 100%;
 	padding: 6px 8px;
 	font-size: 1rem;
-	border: 2px solid #ccc;
+	border: 2px solid #bbb;
 	border-radius: 6px;
 	transition: 0.3s all;
 }
 input:focus {
-	border-color: var(--primary);
+	border-color: var(--secondary);
 	outline: none;
-	box-shadow: 0 0 0 3px #f9f10859;
+	box-shadow: 0 0 0 3px #3666af20;
 }
 
 button {
 	margin-top: 10px;
 	padding: 14px 20px;
 	color: var(--white);
-	background-color: var(--secondary);
+	background-color: var(--third);
 	border: none;
 	border-radius: 6px;
-	font-size: 18px;
+	font-size: 1rem;
 	cursor: pointer;
 	transition: 0.2s;
 }
@@ -124,7 +144,7 @@ button:active {
 }
 
 .footer-text a {
-	color: var(--third);
+	color: var(--secondary);
 	font-weight: 500;
 	text-decoration: none;
 	transition: 0.3s all;
@@ -134,17 +154,19 @@ button:active {
 	text-decoration: underline;
 }
 
-.tagline {
-	font-size: 1.3rem;
-	margin-bottom: 40px;
-}
 .flareon {
 	position: absolute;
 	top: 80%;
-	left: 80%;
+	left: 90%;
 	height: 120px;
 	width: 120px;
+	transition: all 0.2s;
 }
 #flareon {
 	width: 100%;
+}
+.flareon:hover {
+	top: 78%;
+	left: 88%;
+	transform: scale(1.3);
 }
