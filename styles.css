@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+:root {
+	--primary: #f9f108;
+	--black: #1b1b1b;
+	--white: #f7f7f9;
+	--third: #e42020;
+	--secondary: #3666af;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	color: var(--black);
+	background-color: #fbfbfb;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+.hero-image {
+	width: 40%;
+	max-width: 600px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary);
+	overflow: hidden;
+}
+.hero-image > img {
+	width: 100%;
+}
+
+.right {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--black);
+}
+
+.form {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 60px 80px;
+	background-color: var(--white);
+	text-align: center;
+	border: 1px solid #eee;
+	border-radius: 15px;
+	box-shadow: #ffffff15 0px 5px 20px 10px;
+}
+
+#logo {
+	align-self: center;
+	width: clamp(350px, 50%, 500px);
+	margin-bottom: 50px;
+	filter: drop-shadow(0 4px 10px rgba(50, 50, 50, 0.15));
+}
+
+h1 {
+	font-family: "Orbitron", sans-serif;
+	font-size: 1.8rem;
+}
+
+.tagline {
+	font-size: 1.2rem;
+}
+
+.form > * {
+	margin: 5px;
+}
+
+fieldset {
+	border: none;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	max-width: 420px;
+	margin: 0 auto;
+	margin-top: 30px;
+	text-align: left;
+	font-size: 1rem;
+}
+
+.row {
+	display: flex;
+	gap: 20px;
+}
+
+.row p {
+	flex: 1;
+}
+
+label {
+	margin-left: 2px;
+}
+input {
+	width: 100%;
+	padding: 6px 8px;
+	font-size: 1rem;
+	border: 2px solid #bbb;
+	border-radius: 6px;
+	transition: 0.3s all;
+}
+input:focus {
+	border-color: var(--secondary);
+	outline: none;
+	box-shadow: 0 0 0 3px #3666af20;
+}
+
+button {
+	margin-top: 10px;
+	padding: 14px 20px;
+	color: var(--white);
+	background-color: var(--third);
+	border: none;
+	border-radius: 6px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: 0.2s;
+}
+button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+}
+
+button:active {
+	transform: translateY(0);
+}
+
+.footer-text {
+	margin-top: 5px;
+	font-size: 1rem;
+	color: #555;
+}
+
+.footer-text a {
+	color: var(--secondary);
+	font-weight: 500;
+	text-decoration: none;
+	transition: 0.3s all;
+}
+
+.footer-text a:hover {
+	text-decoration: underline;
+}
+
+.flareon {
+	position: absolute;
+	top: 80%;
+	left: 85%;
+	height: 120px;
+	width: 120px;
+	transition: all 0.2s;
+}
+#flareon {
+	width: 100%;
+}
+.flareon:hover {
+	top: 78%;
+	left: 88%;
+	transform: scale(1.3);
+}
