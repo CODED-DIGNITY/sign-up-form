@@ -139,9 +139,9 @@ button:active {
 	margin-bottom: 40px;
 }
 .flareon {
-	display: absolute;
-	margin-left: 80%;
-	margin-top: auto;
+	position: absolute;
+	top: 80%;
+	left: 80%;
 	height: 120px;
 	width: 120px;
 }
